@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: PatientResult
+Implementation-Version: 2.0.1
+Built-By: bala64
+Implementation-Vendor-Id: Result
+Build-Jdk: 1.8.0_131
+Implementation-URL: http://projects.spring.io/spring-boot/PatientResul
+ t/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
