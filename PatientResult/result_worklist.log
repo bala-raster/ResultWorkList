@@ -1,0 +1,236 @@
+2018-03-09 12:19:55.351  INFO 16915 --- [restartedMain] i.r.result.PatientResultApplication      : Starting PatientResultApplication on bala-ri with PID 16915 (/home/bala64/Documents/workspace-sts-3.9.0.RELEASE/PatientResult/target/classes started by bala64 in /home/bala64/Documents/workspace-sts-3.9.0.RELEASE/PatientResult)
+2018-03-09 12:19:55.351  INFO 16915 --- [restartedMain] i.r.result.PatientResultApplication      : No active profile set, falling back to default profiles: default
+2018-03-09 12:19:55.353  INFO 16915 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b71d55: startup date [Fri Mar 09 12:19:55 IST 2018]; root of context hierarchy
+2018-03-09 12:19:55.516  INFO 16915 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-09 12:19:55.527  INFO 16915 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f32af831] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-09 12:19:55.566  INFO 16915 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-03-09 12:19:55.566  INFO 16915 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-09 12:19:55.566  INFO 16915 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-09 12:19:55.570  INFO 16915 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-09 12:19:55.574  INFO 16915 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 221 ms
+2018-03-09 12:19:55.604  INFO 16915 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-09 12:19:55.604  INFO 16915 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-09 12:19:55.604  INFO 16915 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-09 12:19:55.604  INFO 16915 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-09 12:19:55.604  INFO 16915 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-09 12:19:55.604  INFO 16915 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2018-03-09 12:19:55.697  INFO 16915 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-09 12:19:55.698  INFO 16915 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-09 12:19:55.701  INFO 16915 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-03-09 12:19:55.731  INFO 16915 --- [restartedMain] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-03-09 12:19:55.732  INFO 16915 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@79d3d68b
+2018-03-09 12:19:55.751  INFO 16915 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-03-09 12:19:55.824  INFO 16915 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-09 12:19:55.931  INFO 16915 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b71d55: startup date [Fri Mar 09 12:19:55 IST 2018]; root of context hierarchy
+2018-03-09 12:19:55.937  INFO 16915 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/lablink],methods=[GET]}" onto public java.util.List<in.raster.result.domain.LabOrderItem> in.raster.result.controller.LablinkController.searchPatientList(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-03-09 12:19:55.937  INFO 16915 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/patientDetails],methods=[GET]}" onto public java.util.List<in.raster.result.domain.LabOrderItem> in.raster.result.controller.LablinkController.getPatientList()
+2018-03-09 12:19:55.937  INFO 16915 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/machineList],methods=[GET]}" onto public java.util.List<java.lang.String> in.raster.result.controller.LablinkController.getMachineList(javax.servlet.http.HttpServletRequest)
+2018-03-09 12:19:55.938  INFO 16915 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-09 12:19:55.939  INFO 16915 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-09 12:19:55.943  INFO 16915 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-09 12:19:55.944  INFO 16915 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-09 12:19:55.951  INFO 16915 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-09 12:19:55.955  INFO 16915 --- [restartedMain] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-03-09 12:19:55.979  INFO 16915 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-09 12:19:56.022  INFO 16915 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-09 12:19:56.031  INFO 16915 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-03-09 12:19:56.033  INFO 16915 --- [restartedMain] i.r.result.PatientResultApplication      : Started PatientResultApplication in 0.705 seconds (JVM running for 526.68)
+2018-03-09 12:20:25.436  INFO 16915 --- [Thread-18] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b71d55: startup date [Fri Mar 09 12:19:55 IST 2018]; root of context hierarchy
+2018-03-09 12:20:25.440  INFO 16915 --- [Thread-18] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-09 12:20:25.442  INFO 16915 --- [Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-09 12:20:25.691  INFO 16915 --- [restartedMain] i.r.result.PatientResultApplication      : Starting PatientResultApplication on bala-ri with PID 16915 (/home/bala64/Documents/workspace-sts-3.9.0.RELEASE/PatientResult/target/classes started by bala64 in /home/bala64/Documents/workspace-sts-3.9.0.RELEASE/PatientResult)
+2018-03-09 12:20:25.692  INFO 16915 --- [restartedMain] i.r.result.PatientResultApplication      : No active profile set, falling back to default profiles: default
+2018-03-09 12:20:25.693  INFO 16915 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3be35472: startup date [Fri Mar 09 12:20:25 IST 2018]; root of context hierarchy
+2018-03-09 12:20:25.836  INFO 16915 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-09 12:20:25.846  INFO 16915 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f32af831] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-09 12:20:25.884  INFO 16915 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-03-09 12:20:25.884  INFO 16915 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-09 12:20:25.884  INFO 16915 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-09 12:20:25.888  INFO 16915 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-09 12:20:25.889  INFO 16915 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 196 ms
+2018-03-09 12:20:25.918  INFO 16915 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-09 12:20:25.919  INFO 16915 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-09 12:20:25.919  INFO 16915 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-09 12:20:25.919  INFO 16915 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-09 12:20:25.919  INFO 16915 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-09 12:20:25.919  INFO 16915 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2018-03-09 12:20:26.014  INFO 16915 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-09 12:20:26.014  INFO 16915 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-09 12:20:26.020  INFO 16915 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-03-09 12:20:26.047  INFO 16915 --- [restartedMain] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-03-09 12:20:26.047  INFO 16915 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@79d3d68b
+2018-03-09 12:20:26.068  INFO 16915 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-03-09 12:20:26.140  INFO 16915 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-09 12:20:26.218  INFO 16915 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3be35472: startup date [Fri Mar 09 12:20:25 IST 2018]; root of context hierarchy
+2018-03-09 12:20:26.223  INFO 16915 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/lablink],methods=[GET]}" onto public java.util.List<in.raster.result.domain.LabOrderItem> in.raster.result.controller.LablinkController.searchPatientList(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-03-09 12:20:26.224  INFO 16915 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/patientDetails],methods=[GET]}" onto public java.util.List<in.raster.result.domain.LabOrderItem> in.raster.result.controller.LablinkController.getPatientList()
+2018-03-09 12:20:26.224  INFO 16915 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/machineList],methods=[GET]}" onto public java.util.List<java.lang.String> in.raster.result.controller.LablinkController.getMachineList(javax.servlet.http.HttpServletRequest)
+2018-03-09 12:20:26.225  INFO 16915 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-09 12:20:26.225  INFO 16915 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-09 12:20:26.229  INFO 16915 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-09 12:20:26.229  INFO 16915 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-09 12:20:26.236  INFO 16915 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-09 12:20:26.239  INFO 16915 --- [restartedMain] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-03-09 12:20:26.261  INFO 16915 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-09 12:20:26.287  INFO 16915 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-09 12:20:26.292  INFO 16915 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-03-09 12:20:26.294  INFO 16915 --- [restartedMain] i.r.result.PatientResultApplication      : Started PatientResultApplication in 0.623 seconds (JVM running for 556.941)
+2018-03-09 12:20:44.102  INFO 16915 --- [Thread-25] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3be35472: startup date [Fri Mar 09 12:20:25 IST 2018]; root of context hierarchy
+2018-03-09 12:20:44.104  INFO 16915 --- [Thread-25] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-09 12:20:44.105  INFO 16915 --- [Thread-25] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-09 12:20:44.382  INFO 16915 --- [restartedMain] i.r.result.PatientResultApplication      : Starting PatientResultApplication on bala-ri with PID 16915 (/home/bala64/Documents/workspace-sts-3.9.0.RELEASE/PatientResult/target/classes started by bala64 in /home/bala64/Documents/workspace-sts-3.9.0.RELEASE/PatientResult)
+2018-03-09 12:20:44.382  INFO 16915 --- [restartedMain] i.r.result.PatientResultApplication      : No active profile set, falling back to default profiles: default
+2018-03-09 12:20:44.385  INFO 16915 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@29255eec: startup date [Fri Mar 09 12:20:44 IST 2018]; root of context hierarchy
+2018-03-09 12:20:44.621  INFO 16915 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-09 12:20:44.635  INFO 16915 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f32af831] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-09 12:20:44.680  INFO 16915 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-03-09 12:20:44.681  INFO 16915 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-09 12:20:44.681  INFO 16915 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-09 12:20:44.688  INFO 16915 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-09 12:20:44.692  INFO 16915 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 307 ms
+2018-03-09 12:20:44.729  INFO 16915 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-09 12:20:44.730  INFO 16915 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-09 12:20:44.730  INFO 16915 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-09 12:20:44.730  INFO 16915 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-09 12:20:44.730  INFO 16915 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-09 12:20:44.730  INFO 16915 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2018-03-09 12:20:44.824  INFO 17468 --- [main] i.r.r.PatientResultApplicationTests      : Starting PatientResultApplicationTests on bala-ri with PID 17468 (started by bala64 in /home/bala64/Documents/workspace-sts-3.9.0.RELEASE/PatientResult)
+2018-03-09 12:20:44.825  INFO 17468 --- [main] i.r.r.PatientResultApplicationTests      : No active profile set, falling back to default profiles: default
+2018-03-09 12:20:44.860  INFO 16915 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-09 12:20:44.860  INFO 16915 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-09 12:20:44.865  INFO 16915 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-03-09 12:20:44.886  INFO 17468 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@d5b810e: startup date [Fri Mar 09 12:20:44 IST 2018]; root of context hierarchy
+2018-03-09 12:20:44.900  INFO 16915 --- [restartedMain] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-03-09 12:20:44.900  INFO 16915 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@79d3d68b
+2018-03-09 12:20:44.939  INFO 16915 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-03-09 12:20:45.058  INFO 16915 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-09 12:20:45.177  INFO 16915 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@29255eec: startup date [Fri Mar 09 12:20:44 IST 2018]; root of context hierarchy
+2018-03-09 12:20:45.186  INFO 16915 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/lablink],methods=[GET]}" onto public java.util.List<in.raster.result.domain.LabOrderItem> in.raster.result.controller.LablinkController.searchPatientList(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-03-09 12:20:45.186  INFO 16915 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/patientDetails],methods=[GET]}" onto public java.util.List<in.raster.result.domain.LabOrderItem> in.raster.result.controller.LablinkController.getPatientList()
+2018-03-09 12:20:45.186  INFO 16915 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/machineList],methods=[GET]}" onto public java.util.List<java.lang.String> in.raster.result.controller.LablinkController.getMachineList(javax.servlet.http.HttpServletRequest)
+2018-03-09 12:20:45.187  INFO 16915 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-09 12:20:45.188  INFO 16915 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-09 12:20:45.194  INFO 16915 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-09 12:20:45.195  INFO 16915 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-09 12:20:45.205  INFO 16915 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-09 12:20:45.209  INFO 16915 --- [restartedMain] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-03-09 12:20:45.247  INFO 16915 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-09 12:20:45.293  INFO 16915 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-09 12:20:45.311  INFO 16915 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-03-09 12:20:45.313  INFO 16915 --- [restartedMain] i.r.result.PatientResultApplication      : Started PatientResultApplication in 0.964 seconds (JVM running for 575.96)
+2018-03-09 12:20:46.001  INFO 17468 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-09 12:20:46.114  INFO 17468 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b4222ae4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-09 12:20:46.706  INFO 17468 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-09 12:20:46.723  INFO 17468 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-09 12:20:46.780  INFO 17468 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-09 12:20:46.781  INFO 17468 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-09 12:20:46.783  INFO 17468 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-09 12:20:46.819  INFO 17468 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-09 12:20:46.900  INFO 17468 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-03-09 12:20:46.981  INFO 17468 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-03-09 12:20:46.985  INFO 17468 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@61ab89b0
+2018-03-09 12:20:47.428  INFO 17468 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-03-09 12:20:47.553  INFO 17468 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-09 12:20:48.301  INFO 17468 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@d5b810e: startup date [Fri Mar 09 12:20:44 IST 2018]; root of context hierarchy
+2018-03-09 12:20:48.415  INFO 17468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/lablink],methods=[GET]}" onto public java.util.List<in.raster.result.domain.LabOrderItem> in.raster.result.controller.LablinkController.searchPatientList(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-03-09 12:20:48.417  INFO 17468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/patientDetails],methods=[GET]}" onto public java.util.List<in.raster.result.domain.LabOrderItem> in.raster.result.controller.LablinkController.getPatientList()
+2018-03-09 12:20:48.417  INFO 17468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/machineList],methods=[GET]}" onto public java.util.List<java.lang.String> in.raster.result.controller.LablinkController.getMachineList(javax.servlet.http.HttpServletRequest)
+2018-03-09 12:20:48.420  INFO 17468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-09 12:20:48.421  INFO 17468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-09 12:20:48.467  INFO 17468 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-09 12:20:48.467  INFO 17468 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-09 12:20:48.514  INFO 17468 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-09 12:20:48.540  INFO 17468 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-09 12:20:49.017  INFO 17468 --- [main] i.r.r.PatientResultApplicationTests      : Started PatientResultApplicationTests in 4.474 seconds (JVM running for 5.299)
+2018-03-09 12:20:49.095  INFO 17468 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@d5b810e: startup date [Fri Mar 09 12:20:44 IST 2018]; root of context hierarchy
+2018-03-09 12:20:49.103  INFO 17468 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-09 12:20:54.679  INFO 16915 --- [Thread-32] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@29255eec: startup date [Fri Mar 09 12:20:44 IST 2018]; root of context hierarchy
+2018-03-09 12:20:54.683  INFO 16915 --- [Thread-32] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-09 12:20:54.684  INFO 16915 --- [Thread-32] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-09 12:20:54.890  INFO 16915 --- [restartedMain] i.r.result.PatientResultApplication      : Starting PatientResultApplication on bala-ri with PID 16915 (/home/bala64/Documents/workspace-sts-3.9.0.RELEASE/PatientResult/target/classes started by bala64 in /home/bala64/Documents/workspace-sts-3.9.0.RELEASE/PatientResult)
+2018-03-09 12:20:54.890  INFO 16915 --- [restartedMain] i.r.result.PatientResultApplication      : No active profile set, falling back to default profiles: default
+2018-03-09 12:20:54.892  INFO 16915 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57652941: startup date [Fri Mar 09 12:20:54 IST 2018]; root of context hierarchy
+2018-03-09 12:20:55.025  INFO 16915 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-09 12:20:55.035  INFO 16915 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f32af831] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-09 12:20:55.071  INFO 16915 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-03-09 12:20:55.072  INFO 16915 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-09 12:20:55.072  INFO 16915 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-09 12:20:55.076  INFO 16915 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-09 12:20:55.076  INFO 16915 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 184 ms
+2018-03-09 12:20:55.102  INFO 16915 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-09 12:20:55.102  INFO 16915 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-09 12:20:55.102  INFO 16915 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-09 12:20:55.102  INFO 16915 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-09 12:20:55.102  INFO 16915 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-09 12:20:55.102  INFO 16915 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2018-03-09 12:20:55.198  INFO 16915 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-09 12:20:55.198  INFO 16915 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-09 12:20:55.203  INFO 16915 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-03-09 12:20:55.234  INFO 16915 --- [restartedMain] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-03-09 12:20:55.234  INFO 16915 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@79d3d68b
+2018-03-09 12:20:55.253  INFO 16915 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-03-09 12:20:55.331  INFO 16915 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-09 12:20:55.412  INFO 16915 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57652941: startup date [Fri Mar 09 12:20:54 IST 2018]; root of context hierarchy
+2018-03-09 12:20:55.421  INFO 16915 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/lablink],methods=[GET]}" onto public java.util.List<in.raster.result.domain.LabOrderItem> in.raster.result.controller.LablinkController.searchPatientList(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-03-09 12:20:55.421  INFO 16915 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/patientDetails],methods=[GET]}" onto public java.util.List<in.raster.result.domain.LabOrderItem> in.raster.result.controller.LablinkController.getPatientList()
+2018-03-09 12:20:55.422  INFO 16915 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/machineList],methods=[GET]}" onto public java.util.List<java.lang.String> in.raster.result.controller.LablinkController.getMachineList(javax.servlet.http.HttpServletRequest)
+2018-03-09 12:20:55.423  INFO 16915 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-09 12:20:55.423  INFO 16915 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-09 12:20:55.429  INFO 16915 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-09 12:20:55.429  INFO 16915 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-09 12:20:55.438  INFO 16915 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-09 12:20:55.442  INFO 16915 --- [restartedMain] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-03-09 12:20:55.471  INFO 16915 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-09 12:20:55.504  INFO 16915 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-09 12:20:55.511  INFO 16915 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-03-09 12:20:55.513  INFO 16915 --- [restartedMain] i.r.result.PatientResultApplication      : Started PatientResultApplication in 0.641 seconds (JVM running for 586.16)
+2018-03-09 13:43:58.986  INFO 16915 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-09 13:43:59.003  INFO 16915 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-09 13:43:59.009  INFO 16915 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 6 ms
+2018-03-09 13:43:59.022  INFO 16915 --- [http-nio-8090-exec-1] i.r.result.controller.LablinkController  : Lab Name  is not empty or null BeckmenCoulterDxH500
+2018-03-09 13:43:59.024  INFO 16915 --- [http-nio-8090-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-09 19:08:24.516  INFO 16915 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-03-09 19:08:24.518  INFO 16915 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57652941: startup date [Fri Mar 09 12:20:54 IST 2018]; root of context hierarchy
+2018-03-09 19:08:24.522  INFO 16915 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-09 19:08:24.523  INFO 16915 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-12 10:37:42.379  INFO 6587 --- [main] i.r.r.PatientResultApplicationTests      : Starting PatientResultApplicationTests on bala-ri with PID 6587 (started by bala64 in /home/bala64/Documents/workspace-sts-3.9.0.RELEASE/PatientResult)
+2018-03-12 10:37:42.380  INFO 6587 --- [main] i.r.r.PatientResultApplicationTests      : No active profile set, falling back to default profiles: default
+2018-03-12 10:37:42.420  INFO 6587 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@d5b810e: startup date [Mon Mar 12 10:37:42 IST 2018]; root of context hierarchy
+2018-03-12 10:37:43.751  INFO 6587 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-12 10:37:43.938  INFO 6587 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$697b185b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-12 10:37:45.253  INFO 6587 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-12 10:37:45.297  INFO 6587 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-12 10:37:45.405  INFO 6587 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-12 10:37:45.407  INFO 6587 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-12 10:37:45.410  INFO 6587 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-12 10:37:45.478  INFO 6587 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-12 10:37:45.596  INFO 6587 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-03-12 10:37:45.927  INFO 6587 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-03-12 10:37:45.929  INFO 6587 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6d0b0da6
+2018-03-12 10:37:46.609  INFO 6587 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-03-12 10:37:46.884  INFO 6587 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-12 10:37:48.072  INFO 6587 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@d5b810e: startup date [Mon Mar 12 10:37:42 IST 2018]; root of context hierarchy
+2018-03-12 10:37:48.159  INFO 6587 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/machineList],methods=[GET]}" onto public java.util.List<java.lang.String> in.raster.result.controller.LablinkController.getMachineList(javax.servlet.http.HttpServletRequest)
+2018-03-12 10:37:48.160  INFO 6587 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/lablink],methods=[GET]}" onto public java.util.List<in.raster.result.domain.LabOrderItem> in.raster.result.controller.LablinkController.searchPatientList(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-03-12 10:37:48.161  INFO 6587 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/patientDetails],methods=[GET]}" onto public java.util.List<in.raster.result.domain.LabOrderItem> in.raster.result.controller.LablinkController.getPatientList()
+2018-03-12 10:37:48.163  INFO 6587 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-12 10:37:48.164  INFO 6587 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-12 10:37:48.205  INFO 6587 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-12 10:37:48.206  INFO 6587 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-12 10:37:48.250  INFO 6587 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-12 10:37:48.293  INFO 6587 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-03-12 10:37:48.562  INFO 6587 --- [main] i.r.r.PatientResultApplicationTests      : Started PatientResultApplicationTests in 6.575 seconds (JVM running for 7.434)
+2018-03-12 10:37:48.629  INFO 6587 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@d5b810e: startup date [Mon Mar 12 10:37:42 IST 2018]; root of context hierarchy
+2018-03-12 10:37:48.633  INFO 6587 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
